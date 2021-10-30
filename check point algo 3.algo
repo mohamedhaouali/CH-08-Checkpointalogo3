@@ -1,0 +1,73 @@
+PROCEDURE dot-product(v1,v2:ARRAY_OF INTEGER, ps)
+VAR
+    i : INTEGER
+BEGIN
+FOR i FROM 0 TO v1.length DO
+    ps=ps+v1[i]*v2[i]
+END_FOR
+
+END
+
+
+ALGORITHM 
+VAR
+v1, v2 :  ARRAY_OF INTEGER[];
+ps:INTEGER:=0
+    
+BEGIN
+
+
+dot-product(v1,v2, ps)
+    IF (ps=0) THEN
+       write("vectors are orthogonal")
+    
+    ELSE
+        write("vectors are not orthogonal")
+
+    END_IF
+END
+
+Function dot_product (v1, v2,ps)
+
+VAR
+ v1:[3,5,5];
+
+v2:[1,2,4]
+    var result = true;
+    ps:INTEGER:=0
+
+    i:INTEGER;
+BEGIN
+
+{
+if (v1.length !== v2.length) return false;
+    for (var i = 0, len = v1.length; i < len; i++){
+        if (v1[i] !== v2[i]){
+            write (false);
+        }
+    }
+    write (true); 
+
+      let ps = 0;
+   for(let i=0; i < v1.length; i++) {
+     ps = ps +(v1[i] * v2[i]);
+      count ++;
+   };
+   write (ps);
+};
+write(ps);
+
+}  
+END
+
+dot_product(v1,v2, ps)
+    IF (ps=0) THEN
+       write("vectors are orthogonal")
+    
+    ELSE
+            write("vectors are not orthogonal")
+
+    END_IF
+END
+
+
